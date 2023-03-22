@@ -1,38 +1,227 @@
-.App {
+
+.fpage {
+
+  background-image: url("/public/solceller.jpg");
+  min-width: 100vh;
+  height: 100vh;
+  background-size: cover;
+  isolation: isolate;
+  position: relative;
+  color:rgb(52, 97, 51);
+}
+.fpage::after{
+  position: absolute;
+  content: '';
+  z-index: -1;
+  inset: 0;
+  background-color: rgb(243, 234, 234);
+  opacity: 0.77;
+  
+}
+.nav{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.navicon{
+  color: rgb(5, 108, 2);
+  text-decoration: none;
+  padding-right: 20px;padding-right: 20px;
+}
+.navicon:hover{
+  color:  rgb(8, 71, 6);
+}
+.qbtn{
+  margin-left: 110px;
+  margin-top: -5px;
+}
+.h{
+  padding-bottom: 12px;
+ 
+  font-size: 70px;
+}
+.ved{
+  
+  color: rgb(5, 108, 2);
+  margin-top: 30vh;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* service */
+.service{
+  color: rgb(5, 108, 2);
+  min-width: 100vh;
+  height: 100vh;
+  background-color: rgb(205, 240, 202);
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ser{
+  padding-top: 90px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.serv{
+  padding-top: 30px;
+}
+.winpic{
+  width: 540px;
+  height: 360px;
+}
+.sercon
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 40px;
+}
+.pts{
+  padding-top: 12px;
+}
+
+.epts li {
+  padding-top: 17px;
+  text-align: left;
+  border-top: 1px solid green;
+  list-style: none;
+  padding-left: 70px;
+  position: relative;
+}
+
+.epts li:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-size: contain;
+  background-image: url("/public/tick.png");
+}
+/* launch */
+.launch{
+  padding-top: 60px;
+  min-width: 100vh;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right,white,green);
+  text-align: center;
+}
+.winpi{
+  padding-top: 40px;
+  width: 540px;
+  height: 360px;
+  float: right;
+  margin-right: 80px;
+}
+.ltex{
+  padding-top: 40px;
+  margin-left: 140px;
+  text-align:justify;
+  float: left;
+  width: 500px;
+  height: 500px;
+}
+/* review */
+.review{
+  color: green;
+  text-align: center;
+  min-width: 100vh;
+  height: 80vh;
+  background-color: rgb(255, 255, 255);
+}
+.checked {
+  padding-top: 40px;
+  width: 50px;
+  color: orange;
+}
+.fa-star{
+  font-size: 30px;
+}
+
+
+.dot-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot-navigation__dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot-navigation__dot.active {
+  background-color: #333;
+}
+
+/* emblem */
+.emblem{
+  text-align: center;
+  margin-top: 100px;
+  min-width: 100vh;
+  height:50vhvh;
+  background-color: #cdface;
+}
+.emb{
+  margin-top: 100px;
+  width: 300px;
+  height: 250px;
+  margin-bottom: 50px;
+}
+.sch{
+  min-width: 100vh;
+  height: 100vh;
+  text-align: center;
+  background-color: green;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.sch .shu{
+  font-size: 60px;
+  padding-top: 100px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.yelo{
+  display: inline;
+  color: yellow;
+}
+.card{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card h1{
+  color: green;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.car{
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 100px ;
+  color: green;
+}
+.contact{
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.clin{
+  color: green;
+  font-size: 19px;
+  margin-left: 140px;
+  display: inline;
+  margin-bottom: 100px;
+}
+.clin li{
+  padding: 10px;
+}
+.copyrit{
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  background-color: green;
+  min-width: 100vh;
+  height: 10vh;
 }
